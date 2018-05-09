@@ -1,6 +1,6 @@
 set chat_url "[ad_conn package_url]/chat/"
 
-set context {}
+set context [list]
 set user_id [ad_conn user_id]
 set room_create_p [ad_permission_p $user_id chat_room_create]
 set default_mode [ad_parameter DefaultClient chat "ajax"]
