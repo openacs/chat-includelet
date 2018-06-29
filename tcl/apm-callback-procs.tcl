@@ -1,12 +1,12 @@
 ad_library {
 
     Chat Includelet Install library
-    
+
     Procedures that deal with installing, instantiating, mounting.
 
     @creation-date 2008-08-13
     @author Don Baccus <dhogaza@pacifier.com>
-    @cvs-id 
+    @cvs-id $Id$
 }
 
 namespace eval chat_includelet::install {}
