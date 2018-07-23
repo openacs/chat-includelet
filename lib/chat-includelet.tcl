@@ -7,11 +7,11 @@ set default_mode [ad_parameter DefaultClient chat "ajax"]
 set num_rooms 0
 
 db_multirow -extend { can_see_p } rooms rooms_list {} {
-	set can_see_p 0
-	if {($active_p eq "t" && $user_p eq "t") || ($admin_p eq "t")} {
-		set can_see_p 1
-		set num_rooms [expr $num_rooms + 1]
-	}   
+    set can_see_p 0
+    if {($active_p eq "t" && $user_p eq "t") || ($admin_p eq "t")} {
+        set can_see_p 1
+        incr num_rooms
+    }
 }
 
 ad_return_template
